@@ -627,12 +627,6 @@
                             💡 Contexto: Costo de productos
                         </div>
                     </div>
-                    <div class="equation" onclick="showContextualExample(this, 'quadratic')">
-                        <strong>Ecuación Cuadrática:</strong><br>x² - 4x + 4 = 0
-                        <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">
-                            💡 Contexto: Trayectoria de proyectiles
-                        </div>
-                    </div>
                     <div class="equation" onclick="showContextualExample(this, 'percentage')">
                         <strong>Porcentajes:</strong><br>15% de 200 = ?
                         <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">
@@ -732,14 +726,6 @@
             }, 300);
         }
 
-        // Simulate collaboration
-        function simulateCollaboration() {
-            const message = `👥 Simulación de Trabajo Colaborativo:\n\n` +
-                          `Estudiante 1: "Propongo resolver 2x + 3 = 11 restando 3 de ambos lados"\n` +
-                          `Estudiante 2: "¡Correcto! Luego dividimos entre 2"\n` +
-                          `Estudiante 3: "El resultado es x = 4. ¿Podemos verificar?"`;
-            alert(message);
-        }
 
         // Contextual examples for equations
         function showContextualExample(element, type) {
@@ -748,10 +734,7 @@
                     problem: '🛒 Problema Real:\nAna compra 2 cuadernos y paga $3 de envío. El total es $11.\n¿Cuánto cuesta cada cuaderno?',
                     solution: '💡 Solución:\n2x + 3 = 11\n2x = 11 - 3\n2x = 8\nx = 4\n\nCada cuaderno cuesta $4'
                 },
-                'quadratic': {
-                    problem: '🎯 Problema Real:\nUn balón se lanza hacia arriba. Su altura sigue la ecuación h = -x² + 4x + 4\n¿En qué momento toca el suelo (h = 0)?',
-                    solution: '💡 Solución:\n-x² + 4x + 4 = 0\nx² - 4x - 4 = 0\n\nUsando fórmula cuadrática: x ≈ 5.24 segundos'
-                },
+             
                 'percentage': {
                     problem: '🏪 Problema Real:\nUn artículo de $200 tiene 15% de descuento.\n¿Cuánto dinero ahorras?',
                     solution: '💡 Solución:\n15% de 200 = (15/100) × 200 = 30\n\nAhorras $30'
